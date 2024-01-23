@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-container{
+
+    position: relative;
+}
+
+.container{
+
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+
+    padding-bottom: 50px;
+    z-index: 1;
+
+}
+
+.nav_bar{
+
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-section img {
+
+    width: 150px;
+    height: 60px;
+}
+
+.top-right{
+
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#language{
+
+    width: 120px;
+    height: 35px;
+    background-color: rgb(53, 53, 53);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.btn-red{
+
+    height: 35px;
+    width: 90px;
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    z-index: 1;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    border: 0px;
+}
+
+.btn-red::before{
+
+    content: "";
+    background-color: rgba(149, 5, 5, 0.782);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in;
+}
+
+.btn-red:hover::before{
+
+    opacity: 1;
+}
+
+.hero_container{
+
+    width:100%;
+    padding: 1rem;
+    margin: 140px auto 100px auto;
+}
+
+.hero_section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.Heading{
+
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.sub_heading{
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.text-para{
+
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.log_in{
+
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.input_email{
+
+    position: relative;
+    width: 350px;
+    height: 60px;
+    /* background-color: transparent; */
+    background-image: linear-gradient( 45deg, #202021, #212225be, #23242a7c);
+    opacity: 0.800;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding-left: 1rem;
+}
+
+.input_email::before{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient( 45deg, #202021, #212225be, #23242a7c);
+
+}
+
+.btn_big{
+
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bg_image{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(./assets/images/bg_Img_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    object-fit: cover;
+    /* object-position: center bottom; */
+    opacity: 1;
+}
+
+.bg_image::before{
+
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+
+}
+
+.seperation{
+
+    height: 7px;
+    background-color: rgb(45, 45, 45);
+}
+
+.bg-container-mid{
+
+    background-color: black;
+    color: white;
+    
+}
+
+.flex_box{
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    
+    padding: 5rem 0 5rem 0;
+    align-items: center;
+
+}
+
+.content{
+
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+
+.head{
+
+    font-size: 40px;
+    font-weight: 700;  
+}
+
+.sub_head{
+
+    width: 90%;
+    font-size: 20px;
+    font-weight: 500;
+    /* font-stretch: narrower; */
+}
